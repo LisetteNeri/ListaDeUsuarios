@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>API Fetch</title>
+ 
+</head>
+<body>
+
+    <h1>Ejercicio con API Fetch</h1>
+    <div id="spinner" class="spinner"></div>
+
+    <!-- Tabla de usuarios -->
+    <table id="user-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>E-mail</th>
+                <th>Imagen</th>
+            </tr>
+        </thead>
+        <tbody id="list"></tbody>
+    </table>
+
+   
+    <!-- Botones de pagina -->
+    <div class="pagina">
+        <button class="page-btn" onclick="loadPage(1)">1</button>
+        <button class="page-btn" onclick="loadPage(2)">2</button>
+    </div>
+
+  
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+
